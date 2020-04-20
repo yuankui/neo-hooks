@@ -1,0 +1,53 @@
+{
+  "name": "neo-hooks",
+  "version": "2.0.35",
+  "description": "An embedded search engine for js(node)",
+  "scripts": {
+    "build": "rm -rf dist && npm version patch && tsc",
+    "raw-build": "tsc",
+    "deploy": "yarn build && npm publish",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuankui/neo-hooks.git"
+  },
+  "keywords": [
+    "search",
+    "embed",
+    "search-engine",
+    "extension"
+  ],
+  "author": "yuankui <yuankui64@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yuankui/neo-hooks/issues"
+  },
+  "homepage": "https://github.com/yuankui/neo-hooks",
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "coveralls": "^3.0.0",
+    "istanbul": "^0.4.5",
+    "jest": "^24.9.0",
+    "sleepjs": "^3.0.1",
+    "ts-jest": "^24.0.2",
+    "ts-node": "^8.8.2",
+    "typescript": "^3.7.5"
+  },
+  "dependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/chai-arrays": "^1.0.3",
+    "@types/mocha": "^7.0.2",
+    "@types/rocksdb": "^3.0.0",
+    "chai": "^4.2.0",
+    "chai-arrays": "^2.0.0",
+    "mitt": "^1.2.0",
+    "mocha": "^7.1.1",
+    "rxjs": "^6.5.5"
+  },
+  "files": [
+    "/dist",
+    "/src"
+  ]
+}
