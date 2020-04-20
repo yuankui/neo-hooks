@@ -1,3 +1,3 @@
-# Loosenjs
+# Neo-hooks
 
-> An embedded search engine in js
+> A simple IoC container in js
